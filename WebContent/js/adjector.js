@@ -9,9 +9,9 @@
 
     var no_input = {
         sep: "|",
-        stay: 1600,
-        trans: 550,
-        arm: 110
+        stay: 3000,
+        trans: 1000,
+        arm: 200
     };
 
     $.fn.adjector = function (input) {

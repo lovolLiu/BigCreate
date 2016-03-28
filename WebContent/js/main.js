@@ -147,6 +147,61 @@ function countUpTo(count,selector,max)
             speed = Math.round(count / div_by),
             $display = selector,
             run_count = 300,
+            int_speed = 3;
+
+        var int = setInterval(function() {
+            if(run_count < div_by){
+                $display.text(speed * run_count);
+                run_count++;
+            } else if(parseInt($display.text()) < count) {
+                var curr_count = parseInt($display.text()) + 1;
+                var text = "";
+                if(max>99){
+                     if(curr_count<10){
+                        text = text+"00"+curr_count;
+                    }
+                    /*else if(curr_count < 100 && curr_count >9){
+                        text = text+"0"+curr_count;
+                    }*/
+                    else{
+                      text = curr_count;
+                    }
+                }else if(max<100 && max>9){
+                     if(curr_count<10){
+                        text = text+"00"+curr_count;
+                    }
+                   /*else if(curr_count < 100 && curr_count >9){
+                        text = text+"0"+curr_count;
+                    }*/
+                    else{
+                      text = curr_count;
+                    }
+                }else{
+                      if(curr_count<10){
+                        text = text+"00"+curr_count;
+                    }
+                   /*else if(curr_count < 100 && curr_count >9){
+                        text = text+"0"+curr_count;
+                    }*/
+                    else{
+                      text = curr_count;
+                    }
+                }
+               
+                $display.text(text);
+            } else {
+                clearInterval(int);
+            }
+        }, int_speed);
+    }
+
+function countUpTo1(count,selector,max)
+    {
+      console.log("count--> "+count);
+        var div_by = count,
+            speed = Math.round(count / div_by),
+            $display = selector,
+            run_count = 230900,
             int_speed = 1;
 
         var int = setInterval(function() {
@@ -195,6 +250,117 @@ function countUpTo(count,selector,max)
         }, int_speed);
     }
 
+function countUpTo3(count,selector,max)
+    {
+      console.log("count--> "+count);
+        var div_by = count,
+            speed = Math.round(count / div_by),
+            $display = selector,
+            run_count = 27000,
+            int_speed = 10;
+
+        var int = setInterval(function() {
+            if(run_count < div_by){
+                $display.text(speed * run_count);
+                run_count++;
+            } else if(parseInt($display.text()) < count) {
+                var curr_count = parseInt($display.text()) + 1;
+                var text = "";
+                if(max>99){
+                     if(curr_count<10){
+                        text = text+"00"+curr_count;
+                    }
+                    /*else if(curr_count < 100 && curr_count >9){
+                        text = text+"0"+curr_count;
+                    }*/
+                    else{
+                      text = curr_count;
+                    }
+                }else if(max<100 && max>9){
+                     if(curr_count<10){
+                        text = text+"00"+curr_count;
+                    }
+                   /*else if(curr_count < 100 && curr_count >9){
+                        text = text+"0"+curr_count;
+                    }*/
+                    else{
+                      text = curr_count;
+                    }
+                }else{
+                      if(curr_count<10){
+                        text = text+"00"+curr_count;
+                    }
+                   /*else if(curr_count < 100 && curr_count >9){
+                        text = text+"0"+curr_count;
+                    }*/
+                    else{
+                      text = curr_count;
+                    }
+                }
+               
+                $display.text(text);
+            } else {
+                clearInterval(int);
+            }
+        }, int_speed);
+    }
+
+function countUpTo5(count,selector,max)
+    {
+      console.log("count--> "+count);
+        var div_by = count,
+            speed = Math.round(count / div_by),
+            $display = selector,
+            run_count = 1,
+            int_speed = 80;
+
+        var int = setInterval(function() {
+            if(run_count < div_by){
+                $display.text(speed * run_count);
+                run_count++;
+            } else if(parseInt($display.text()) < count) {
+                var curr_count = parseInt($display.text()) + 1;
+                var text = "";
+                if(max>99){
+                     if(curr_count<10){
+                        text = text+"00"+curr_count;
+                    }
+                    /*else if(curr_count < 100 && curr_count >9){
+                        text = text+"0"+curr_count;
+                    }*/
+                    else{
+                      text = curr_count;
+                    }
+                }else if(max<100 && max>9){
+                     if(curr_count<10){
+                        text = text+"00"+curr_count;
+                    }
+                   /*else if(curr_count < 100 && curr_count >9){
+                        text = text+"0"+curr_count;
+                    }*/
+                    else{
+                      text = curr_count;
+                    }
+                }else{
+                      if(curr_count<10){
+                        text = text+"00"+curr_count;
+                    }
+                   /*else if(curr_count < 100 && curr_count >9){
+                        text = text+"0"+curr_count;
+                    }*/
+                    else{
+                      text = curr_count;
+                    }
+                }
+               
+                $display.text(text);
+            } else {
+                clearInterval(int);
+            }
+        }, int_speed);
+    }
+
+
 
 var firstTime = true;
 $(document).scroll(function(event) {
@@ -226,11 +392,11 @@ $(document).scroll(function(event) {
             max = Math.max(max,parseInt(count6Num));
             console.log(max);
 
-            countUpTo(count1Num,count1,max);
+            countUpTo1(count1Num,count1,max);
             countUpTo(count2Num,count2,max);
-            countUpTo(count3Num,count3,max);
+            countUpTo3(count3Num,count3,max);
             countUpTo(count4Num,count4,max);
-            countUpTo(count5Num,count5,max);
+            countUpTo5(count5Num,count5,max);
             countUpTo(count6Num,count6,max);
       }
 

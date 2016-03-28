@@ -1,4 +1,5 @@
-
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
@@ -16,7 +17,7 @@
         <link rel="stylesheet" href="css/animate.css">
 				<link rel="stylesheet" href="css/main.css">
 				<link rel="stylesheet" href="css/adjector.css">
-				<link rel="stylesheet" href="css/slick.css"/> 
+				<link rel="stylesheet" href="css/slick.css"> 
 
 		<!-- google font -->
         <link href='http://fonts.useso.com/css?family=Oswald:300,400' rel='stylesheet'>
@@ -48,9 +49,10 @@
                                 <ul class="nav navbar-nav">
                                     <li class="active"><a href="#header"><i class="fa fa-home"></i> <span>主页</span></a></li>
                                     <li><a href="#services"><i class="fa fa-star"></i> 大数据分析</a></li>
-                                    <li><a href="#portfolio-5" id="tubutton-4"><i class="fa fa-bookmark"></i> 更多简历</a></li>
+                                    <li><a href="#portfolio-5"><i class="fa fa-bookmark"></i> 更多简历</a></li>
                                     <li><a href="#contact" id="contact-button"><i class="fa fa-user" ></i> 信息输入</a></li>
                                     
+                 
                                     <li><a href="#portfolio-1" id="tubutton-1"><i class="fa fa-bookmark"></i> 实力评估</a></li>
                                     <li><a href="#portfolio-2" id="tubutton-2"><i class="fa fa-bookmark"></i> 薪资规划</a></li>
                                     <li><a href="#portfolio-3" id="tubutton-3"><i class="fa fa-bookmark"></i> 职位波动</a></li>
@@ -788,7 +790,7 @@
 											<p>专业 <input type="text" value="软件工程"></p>
 											 <fieldset>
 										<legend>期望工作*</legend>
-											<p>期望职位
+											<p>期望职位 
 												<select name="position">
 												<option value=".net工程师">.net工程师</option>
 												<option value="C/C++工程师">C/C++工程师</option>
@@ -1228,7 +1230,7 @@
 				})
 			});
 			
-      </script>
+        </script>
         
       <!--杨智淇图表js-->
       <script src="src/dist/echarts.js"></script>

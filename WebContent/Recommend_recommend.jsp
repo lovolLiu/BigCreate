@@ -777,67 +777,91 @@
 	                            <legend>填写简历信息</legend>
                             </form>
                             <br>
-                            <div class="col-md-6 wow animated fadeInLeft" id="tofadeInLeft">
-                                <form class="contact-form" id="contact-form">
-							        <fieldset>
-										<legend>教育信息*</legend>
-											<p>年龄 <input type="text" name="name" value="20"></p>
-						
-											<p>学校 <input type="text" name="email" value="北京邮电大学"></p>
-						
-											<p>学位 <input type="text" name="website" value="本科"></p>
-						
-											<p>专业 <input type="text" value="软件工程"></p>
-											 <fieldset>
-										<legend>期望工作*</legend>
-											<p>期望职位 
-												<select name="position">
-												<option value=".net工程师">.net工程师</option>
-												<option value="C/C++工程师">C/C++工程师</option>
-												<option value="DBA工程师">DBA工程师</option>
-												<option value="Hadoop工程师">Hadoop工程师</option>
-												<option value="Java工程师">Java工程师</option>
-												<option value="Perl工程师">Perl工程师</option>
-												<option value="php开发工程师">php开发工程师</option>
-												<option value="Python工程师">Python工程师</option>
-												<option value="ruby工程师">ruby工程师</option>
-												<option value="web前端开发工程师">web前端开发工程师</option>
-												<option value="交互设计">交互设计</option>
-												<option value="产品设计师">产品设计师</option>
-												<option value="企业软件">企业软件</option>
-												<option value="全栈工程师">全栈工程师</option>
-												<option value="后端开发">后端开发</option>
-												<option value="市场营销">市场营销</option>
-												<option value="搜索算法">搜索算法</option>
-												<option value="数据挖掘工程师">数据挖掘工程师</option>
-												<option value="测试工程师">测试工程师</option>
-												<option value="移动产品设计师">移动产品设计师</option>
-												<option value="精准推荐">精准推荐</option>
-												<option value="自然语言处理工程师">自然语言处理工程师</option>
-												<option value="视觉设计">视觉设计</option>
-												<option value="运维工程师">运维工程师</option>
-												<option value="高端技术">高端技术</option>
-											</select>
-											</p>
-											<p>期望月薪 <input type="number" name="sal" value="软件工程师"></p>
-											
-						  			</fieldset>
-											
-                            </div>
-                            <div class="col-md-6 wow animated fadeInRight" id="tofadeInRight">
-	                            <form class="contact-form" id="contact-form">
-		                           
-						  			<fieldset>
-										<legend>专业经历</legend>
-											<p>熟悉技能<textarea type="text" name="name" value="软件工程师" rows="6">Java,Python,Hadoop,Haskell</textarea></p>
-											项目经历<textarea type="text" name="name" value="软件工程师" rows="7"></textarea>
-						  			</fieldset>
-                                    <input type="submit" value="提交">
-	                            </form>
-                                <br><br><br>
-                            </div>
-                           
-                            <form id="header-form">
+						<form class="contact-form" id="contact-form"
+							action="Recommend_recommend">
+							<div class="col-md-6 wow animated fadeInLeft" id="tofadeInLeft">
+
+								<fieldset>
+
+									<legend>基本信息*</legend>
+									<p>
+										性别 <input type="text" name="gender" value="${gender}">
+									</p>
+
+									<p>
+										年龄 <input type="text" name="age" value="${age}">
+									</p>
+								</fieldset>
+								<fieldset>
+									<legend>教育信息*</legend>
+
+									<p>
+										学校 <input type="text" name="school" value="${school}">
+									</p>
+
+									<p>
+										学位 <input type="text" name="background" value="${background}">
+									</p>
+
+									<p>
+										专业 <input type="text" name="major" value="${major}">
+									</p>
+								</fieldset>
+
+
+							</div>
+							<div class="col-md-6 wow animated fadeInRight" id="tofadeInRight">
+								<fieldset>
+									<legend>期望工作*</legend>
+									<p>
+										期望职位 <select name="position">
+											<option value=".net工程师">.net工程师</option>
+											<option value="C/C++工程师">C/C++工程师</option>
+											<option value="DBA工程师">DBA工程师</option>
+											<option value="Hadoop工程师">Hadoop工程师</option>
+											<option value="Java工程师">Java工程师</option>
+											<option value="Perl工程师">Perl工程师</option>
+											<option value="php开发工程师">php开发工程师</option>
+											<option value="Python工程师">Python工程师</option>
+											<option value="ruby工程师">ruby工程师</option>
+											<option value="web前端开发工程师">web前端开发工程师</option>
+											<option value="交互设计">交互设计</option>
+											<option value="产品设计师">产品设计师</option>
+											<option value="企业软件">企业软件</option>
+											<option value="全栈工程师">全栈工程师</option>
+											<option value="后端开发">后端开发</option>
+											<option value="市场营销">市场营销</option>
+											<option value="搜索算法">搜索算法</option>
+											<option value="数据挖掘工程师">数据挖掘工程师</option>
+											<option value="测试工程师">测试工程师</option>
+											<option value="移动产品设计师">移动产品设计师</option>
+											<option value="精准推荐">精准推荐</option>
+											<option value="自然语言处理工程师">自然语言处理工程师</option>
+											<option value="视觉设计">视觉设计</option>
+											<option value="运维工程师">运维工程师</option>
+											<option value="高端技术">高端技术</option>
+										</select>
+									</p>
+									<p>
+										期望月薪 <input type="number" name="salary" value="${salary}">
+									</p>
+
+								</fieldset>
+								<fieldset>
+									<legend>专业经历</legend>
+									<p>
+										熟悉技能
+										<textarea type="text" name="skill" value="软件工程师" rows="1">${skill}</textarea>
+									</p>
+									项目经历
+									<textarea type="text" name="project" value="软件工程师" rows="4">${project}</textarea>
+								</fieldset>
+								<input type="submit" value="提交"> <br>
+								<br>
+								<br>
+							</div>
+						</form>
+						<form id="header-form">
 	                            <legend>上传简历文件</legend>
                             </form>
                             <br>
@@ -1467,6 +1491,7 @@
 	<script src="src/dist/echarts-all.js"></script>
 	<!-- ###### -->
 	<!--radar图表js-->
+	<!--radar图表js-->
 	<script type="text/javascript">
 		// 基于准备好的dom，初始化echarts图表
 		var myChart0 = echarts.init(document.getElementById('mainradar'),
@@ -1524,8 +1549,8 @@
 			        x : 'center',
 			        y : 'bottom',
 			        data:[
-			            '年龄','性别','地区','婚姻状况','学校',
-			            '学历', '专业', '工龄', '职位', '技能','公司','项目经历'
+					'性别','年龄','学校',
+					'学历', '专业', '工龄', '职位', '技能','公司','项目经历'
 			        ]
 			    },
 			      tooltip : {
@@ -1574,18 +1599,16 @@
 			  polar : [
 			       {
 			           indicator : [
-			               { text: '年龄', max: 100},
-			               { text: '性别', max: 100},
-			               { text: '地区', max: 100},
-			               { text: '婚姻状况', max: 100},
-			               { text: '学校', max: 100},
-			               { text: '学历', max: 100},
-			               { text: '专业', max: 100},
-			               { text: '工龄', max: 100},
-			               { text: '职位', max: 100},
-			               { text: '技能', max: 100},
-			               { text: '公司', max: 100},
-			               { text: '项目经历', max: 100},
+			                        { text: '性别', max: 100},
+			                        { text: '年龄', max: 100},
+			                        { text: '专业', max: 100},
+			                        { text: '学校', max: 100},
+			                        { text: '学历', max: 100},
+			                        { text: '工龄', max: 100},
+			                        { text: '职位', max: 100},
+			                        { text: '技能', max: 100},
+			                        { text: '公司', max: 100},
+			                        { text: '项目经历', max: 100},
 			             
 			            ]
 			        }
@@ -1593,24 +1616,13 @@
 			    series : [
 			        {
 			            type : 'pie',
-			            center : ['10%', '7.5%'],
-			            radius : radius,
-			            x: '0%', // for funnel
-			            itemStyle : labelFromatter,
-			            data : [
-			                {name:'other', value:100-'${age_score}', itemStyle : labelBottom},
-			                {name:'年龄', value:'${age_score}',itemStyle : labelTop}
-			            ]
-			        },
-			        {
-			            type : 'pie',
 			            center : ['10%', '22.5%'],
 			            radius : radius,
 			            x:'20%', // for funnel
 			            itemStyle : labelFromatter,
 			            data : [
-			                {name:'other', value:56, itemStyle : labelBottom},
-			                {name:'性别', value:44,itemStyle : labelTop}
+			                {name:'other', value:0, itemStyle : labelBottom},
+			                {name:'性别', value:100,itemStyle : labelTop}
 			            ]
 			        },
 			        {
@@ -1620,8 +1632,8 @@
 			            x:'40%', // for funnel
 			            itemStyle : labelFromatter,
 			            data : [
-			                {name:'other', value:65, itemStyle : labelBottom},
-			                {name:'地区', value:35,itemStyle : labelTop}
+			                {name:'other', value:0, itemStyle : labelBottom},
+			                {name:'年龄', value:100,itemStyle : labelTop}
 			            ]
 			        },
 			        {
@@ -1631,8 +1643,8 @@
 			            x:'60%', // for funnel
 			            itemStyle : labelFromatter,
 			            data : [
-			                {name:'other', value:70, itemStyle : labelBottom},
-			                {name:'婚姻状况', value:30,itemStyle : labelTop}
+				                {name:'other', value:100-'${major_score}', itemStyle : labelBottom},
+				                {name:'专业', value:'${major_score}',itemStyle : labelTop}
 			            ]
 			        },
 			        {
@@ -1658,18 +1670,7 @@
 			                {name:'学历', value:'${background_score}',itemStyle : labelTop}
 			            ]
 			        },
-			        {
-			            type : 'pie',
-			            center : ['90%', '7.5%'],
-			            radius : radius,
-			            y: '55%',   // for funnel
-			            x:'20%',    // for funnel
-			            itemStyle : labelFromatter,
-			            data : [
-			                {name:'other', value:100-'${major_score}', itemStyle : labelBottom},
-			                {name:'专业', value:'${major_score}',itemStyle : labelTop}
-			            ]
-			        },
+
 			               {
 			            type : 'pie',
 			            center : ['90%', '22.5%'],
@@ -1678,8 +1679,8 @@
 			            x:'80%', // for funnel
 			            itemStyle : labelFromatter,
 			            data : [
-			                {name:'other', value:89, itemStyle : labelBottom},
-			                {name:'工龄', value:11,itemStyle : labelTop}
+			                {name:'other', value:50, itemStyle : labelBottom},
+			                {name:'工龄', value:50,itemStyle : labelTop}
 			            ]
 			        },
 			        {
@@ -1702,8 +1703,8 @@
 			            x:'60%', // for funnel
 			            itemStyle : labelFromatter,
 			            data : [
-			                {name:'other', value:83, itemStyle : labelBottom},
-			                {name:'技能', value:17,itemStyle : labelTop}
+			                {name:'other', value:30, itemStyle : labelBottom},
+			                {name:'技能', value:70,itemStyle : labelTop}
 			            ]
 			        },
 			        {
@@ -1714,8 +1715,8 @@
 			            x:'80%', // for funnel
 			            itemStyle : labelFromatter,
 			            data : [
-			                {name:'other', value:89, itemStyle : labelBottom},
-			                {name:'公司', value:11,itemStyle : labelTop}
+			                {name:'other', value:35, itemStyle : labelBottom},
+			                {name:'公司', value:65,itemStyle : labelTop}
 			            ]
 			        },
 			        {
@@ -1726,16 +1727,25 @@
 			            x:'80%', // for funnel
 			            itemStyle : labelFromatter,
 			            data : [
-			                {name:'other', value:89, itemStyle : labelBottom},
-			                {name:'项目经历', value:11,itemStyle : labelTop}
+			                {name:'other', value:11, itemStyle : labelBottom},
+			                {name:'项目经历', value:89,itemStyle : labelTop}
 			            ]
 			        },
 			      {
 			            name: '分数',
 			            type: 'radar',
+			            itemStyle: {
+			                normal: {
+			                  color:'rgb(88,200,209)',
+			                  areaStyle: {
+			                        type: 'default',
+			                        color: 'rgba(88,200,209,0.7)'
+			                  },
+			                }
+			            },
 			            data : [
 			                {
-			                    value : ['${age_score}', 100, 100, 97,'${school_score}', '${background_score}','${major_score}',100,'${position_score}',100,90,89],
+			                    value : [ 100,'${age_score}','${major_score}', '${school_score}', '${background_score}',50,'${position_score}',70,65,89],
 			                    name : '分数'
 			                }
 

@@ -669,7 +669,7 @@ ul.numbersList span{
 }
 
 input[type="text"],
-input[type="email"]{
+input[type="email"], select{
 	margin: 0 auto;
 	width: 70%;
 	background: transparent;

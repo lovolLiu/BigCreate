@@ -788,7 +788,7 @@
 											<p>专业 <input type="text" value="软件工程"></p>
 											 <fieldset>
 										<legend>期望工作*</legend>
-											<p>期望职位 <input type="text" name="pos" value="软件工程师">
+											<p>期望职位
 												<select name="position">
 												<option value=".net工程师">.net工程师</option>
 												<option value="C/C++工程师">C/C++工程师</option>

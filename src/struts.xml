@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="default" namespace="/" extends="struts-default">
+		<action name="*_*" class="actionclass.{1}Action" method="{2}">
+			<result name="success">{1}_{2}.jsp</result>
+			<result name="fail">{1}_{2}_fail.jsp</result>
+			<result name="mainpage">index.html</result>
+		</action>
+<!-- 		<action name="CreatePosition" class="actionclass.CreatePositionAction"> -->
+<!-- 			<result name="success">ResumeJDModule/create_position_succ.html</result> -->
+<!-- 		</action> -->
+<!-- 		<action name="ListPosition" class="actionclass.ListPositionAction"> -->
+<!-- 			<result name="success">ResumeJDModule/ListPosition.jsp</result> -->
+<!-- 		</action> -->
+<!-- 		<action name="JobDetail" class="actionclass.JobDetailAction"> -->
+<!-- 			<result name="success">ResumeJDModule/JobDetail.jsp</result> -->
+<!-- 		</action> -->
+		
+<!-- 		<action name="ResumeDetail" class="actionclass.ResumeDetailAction"> -->
+<!-- 			<result name="success">ResumeJDModule/resume_detail.jsp</result> -->
+<!-- 		</action> -->
+		
+<!-- 		<action name="CreateResume" class="actionclass.CreateResumeAction"> -->
+<!-- 			<result name="success" type="redirect">/JobDetail?id=${positionId}</result> -->
+
+	</package>
+</struts>

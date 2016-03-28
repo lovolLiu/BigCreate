@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="gb2312">
+    <title>ECharts</title>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main" style="height:400px"></div>
+    <!-- ECharts单文件引入 -->
+    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+    <script type="text/javascript">
+        // 路径配置
+        require.config({
+            paths: {
+                echarts: 'src'            //first 路径
+            }
+        });
+        
+        // 使用
+        require(
+            [
+                'echarts',
+                'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+				'echarts/chart/force'        //second 路径
+            ],
+            function (ec) {
+                // 基于准备好的dom，初始化echarts图表
+                var myChart = ec.init(document.getElementById('main')); 
+                
+				option = {
+					title : {
+						text: '与您相似的人',
+						subtext: '数据来自51猎头',
+						x:'right',
+						y:'bottom'
+					},
+					tooltip : {
+						trigger: 'item',
+						formatter: '{a} : {b}'
+					},
+					toolbox: {
+						show : true,
+						feature : {
+							restore : {show: true},
+							magicType: {show: true, type: ['force', 'chord']},
+							saveAsImage : {show: true}
+						}
+					},
+					legend: {
+						x: 'left',
+						data:['您','其他人']
+					},
+					series : [
+						{
+							type:'force',
+							name : "",
+							ribbonType: false,
+							categories : [
+								{
+									name: '您'
+								},
+								{
+									name: '其他人'
+								},
+								{
+									name:'朋友'
+								}
+							],
+							itemStyle: {
+								normal: {
+									label: {
+										show: true,
+										textStyle: {
+											color: '#333'
+										}
+									},
+									nodeStyle : {
+										brushType : 'both',
+										borderColor : 'rgba(255,215,0,0.4)',
+										borderWidth : 1
+									},
+									linkStyle: {
+										type: 'curve'
+									}
+								},
+								emphasis: {
+									label: {
+										show: false
+										// textStyle: null      // 默认使用全局文本样式，详见TEXTSTYLE
+									},
+									nodeStyle : {
+										//r: 30
+									},
+									linkStyle : {}
+								}
+							},
+							useWorker: false,
+							minRadius : 15,
+							maxRadius : 25,
+							gravity: 1.1,
+							scaling: 1.1,
+							roam: 'move',
+							nodes:[
+								{category:0, name: '您', value : 10, label: '您'},
+								{category:1, name: '王智',value : 2, label: '王智'},
+								{category:1, name: '张大伟',value : 3, label: '张大伟'},
+								{category:1, name: '吴康',value : 3, label: '吴康'},
+								{category:1, name: '李闯',value : 7, label: '李闯'},
+								{category:2, name: '菱塘',value : 5, label: '菱塘'},
+								{category:2, name: '杨伊',value : 8, label: '杨伊'},
+								{category:2, name: '付钰',value : 4, label: '付钰'},
+								{category:2, name: '刘欣彤',value : 4, label: '刘昕彤'},
+								{category:2, name: '崔仲其',value : 4, label: '崔仲其'},
+								{category:2, name: '苏畅',value : 1, label: '苏畅'},
+							],
+							links : [
+								{source : '王智', target : '您', weight : 1, name: '硕士 北京航空航天大学 测试项目组长 中国航空综合技术研究所 C++'},
+								{source : '张大伟', target : '您', weight : 1, name: '本科  西北农林科技大学 计算机科学与技术 软件工程师 北京浩鸿明凯科技发展有限公司 java'},
+								{source : '吴康', target : '您', weight : 1, name: '硕士 厦门大学 通信工程 北京鸿鹄卓越科技有限公司 Web前端'},
+								{source : '李闯', target : '您', weight : 2, name: '硕士 西安电子科技大学 飞行器设计与工程 总工程师 北京世纪铭辰科技有限公司 C++,算法设计'},
+								{source : '菱塘', target : '您', weight : 3, name: '硕士 北京航空航天大学 软件工程 软件工程师 融世纪信息技术有限公司 数据挖掘'},
+								{source : '杨伊', target : '您', weight : 1, name: '本科 北京科技大学 计算机科学与技术 总监经理 北京禾木艺鑫文化传媒有限公司 python'},
+								{source : '付钰', target : '您', weight : 6, name: '本科 中国矿业大学(北京) 计算机科学与技术 通信技术工程师 北京时代凌宇科技有限公司 php'},
+								{source : '刘欣彤', target : '您', weight : 1, name: '硕士 北京交通大学 通信工程 测试工程师	新浪 C/C++,Java'},
+								{source : '崔仲其', target : '您', weight : 1,name: '本科 北京科技大学 自动化 大唐电信 php,html5,mysql'},
+								{source : '苏畅', target : '您', weight : 1, name:'本科	北京科技大学 计算机科学与技术 初级软件测试工程师 北京鸿鹄卓越科技有限公司 健康保险系统 mysql'},
+								
+							]
+						}
+					]
+				};
+			var ecConfig = require('echarts/config');
+			function focus(param) {
+				var data = param.data;
+				var links = option.series[0].links;
+				var nodes = option.series[0].nodes;
+				if (
+					data.source !== undefined
+					&& data.target !== undefined
+				) { //点击的是边
+					var sourceNode = nodes.filter(function (n) {return n.name == data.source})[0];
+					var targetNode = nodes.filter(function (n) {return n.name == data.target})[0];
+					console.log("选中了边 " + sourceNode.name + ' -> ' + targetNode.name + ' (' + data.weight + ')');
+				} else { // 点击的是点
+					console.log("选中了" + data.name + '(' + data.value + ')');
+				}
+			}
+			myChart.on(ecConfig.EVENT.CLICK, focus)
+
+			myChart.on(ecConfig.EVENT.FORCE_LAYOUT_END, function () {
+				console.log(myChart.chart.force.getPosition());
+			});
+
+
+                    
+
+				
+				
+				
+				
+				
+				
+				
+				
+				
+
+        
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+                // 为echarts对象加载数据 
+                myChart.setOption(option); 
+            }
+        );
+    </script>
+</body>

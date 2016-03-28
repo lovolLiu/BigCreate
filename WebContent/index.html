@@ -1,0 +1,233 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.min.js"></script>
+        <!-- Custom Theme files -->
+        <!--theme-style-->
+        <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/resumeDetails-1-0-7.css" rel="stylesheet" type="text/css" media="all" />
+        <!--//theme-style-->
+        <meta name="swipebox-sliderewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="keywords" content="Acrostia Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+              Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+        <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+        <!--fonts-->
+        <!--<link href='http://fonts.useso.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>-->
+        <!--//fonts-->
+        <style>
+            .echarts-tooltip a{
+                color: white;
+            }
+            body{
+                font-family: "黑体";
+            }
+            #panel,#flip
+            {
+                padding:5px;
+                text-align:center;
+                border:none;
+            }
+            #panel
+            {
+                padding:50px;
+                display:none;
+                background: transparent;
+                border: none;
+            }
+
+        </style>
+        <script src="js/responsiveslides.min.js"></script>
+        <script>
+            $(function () {
+                $("#slider").responsiveSlides({
+                    auto: true,
+                    nav: true,
+                    speed: 500,
+                    namespace: "callbacks",
+                    pager: true,
+                });
+            });
+        </script>
+        <!---->
+        <script type="text/javascript" src="js/move-top.js"></script>
+        <script type="text/javascript" src="js/easing.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $(".scroll").click(function (event) {
+                    event.preventDefault();
+                    $('html,body').animate({scrollTop: $(this.hash).offset().top}, 1000);
+                });
+            });
+        </script>
+
+
+    </head>
+    <body> 
+        <!--header-->
+        <!--banner-->
+        <div class="banner" id="home">
+            <div class="slider" >
+                <div class="callbacks_container">
+                    <ul class="rslides" id="slider">
+                        <li>
+                            <img src="images/bg.jpg" alt="" />
+                            <div class="banner-matter">
+                                <img class="img-responsive"  src="images/good1.png" alt="good" width="470" height="95">
+
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!---->
+        <div class="header" style="position: fixed;">
+            <div id = "headerbg" style="display: none;position: absolute; width: 100%; height: 104%; left: 0; top:0; background: black; opacity: 0.4;  z-index: -1;"></div>
+            <div class="container">
+                <div class="fixed-header" >
+
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt=" "  width="120"/></a>
+                    </div>
+
+                    <div class="top-nav cssmenu" >
+                        <nav class="nav clearfix" >
+                            <a id="menu-toggle" class="anchor-link"><img src="images/menu.png" alt="" /></a>
+                            <ul class="simple-toggle" id="nav">
+                                <li class="current"><a href="#home" class="scroll"><font face="微软雅黑" color="ffffff"><b>首页</b></font></a></li>
+                                <li><a href="#services" class="scroll"> <font face="微软雅黑" color="ffffff"><b>个人信息输入</b></font></a></li>
+<!--                                 <li><a href="ResumeJDModule/create.html"> <font face="微软雅黑" color="ffffff"><b>招人才</b></font></a></li> -->
+<!--                                 <li><a href="http://localhost:8080/BigCreate/ListPosition"> <font face="微软雅黑" color="ffffff"><b>找工作</b></font></a></li> -->
+<!--                                 <li><a href="#radarChart" class="scroll"> <font face="微软雅黑" color="ffffff"><b>实力评估</b></font></a></li> -->
+<!--                                 <li><a href="#about" class="scroll"><font face="微软雅黑" color="ffffff"><b>薪资规划</b></font></a></li> -->
+<!--                                 <li><a href="#work" class="scroll"><font face="微软雅黑" color="ffffff"><b>职位波动</b></font></a></li> -->
+<!--                                 <li><a href="#contact" class="scroll"><font face="微软雅黑" color="ffffff"><b>相似的人</b></font></a></li> -->
+                            </ul>
+                        </nav>
+
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+
+                                $('#menu-toggle').click(function () {
+                                    $('#nav').toggleClass('open');
+                                    e.preventDefault();
+                                });
+
+                            });
+                        </script>
+                        <!---->
+                        <script src="js/jquery.nav.js"></script>
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                $('#nav').onePageNav({
+                                    begin: function () {
+                                        console.log('start')
+                                    },
+                                    end: function () {
+                                        console.log('stop')
+                                    }
+                                });
+                            });
+                        </script>
+
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                var navoffeset = $(".header").offset().top;
+                $(window).scroll(function () {
+                    var scrollpos = $(window).scrollTop();
+                    if (scrollpos >= navoffeset) {
+                        $(".header").addClass("fixed");
+                    } else {
+                        $(".header").removeClass("fixed");
+                    }
+                });
+
+            });
+        </script>
+        <!-- /script-for sticky-nav -->
+
+        <!--content-->
+        <div class="content">
+            <!---->
+            <div class="services" id="services">
+                <div class="container">
+                    <div class="service-head">
+                        <h3>为您精心策划的职业路线</h3>
+                        <span>输入以下信息，获取3种精准的职业分析和规划路线</span>
+
+                    </div>
+
+
+                    <p style="text-align: left; color: white; font-size: 17px; margin-bottom: 10px; margin-top: 50px; ">方式一 填写我的信息</p> 
+                    <div class=" services-grid" style="padding-top: 20px;">
+						<form action="Recommend_recommend">
+                        <div class="col-md-4 service-grid">
+<!--                             <form action="/example/html/form_action.asp" method="get"> -->
+                                <p>年龄: <input class="text" type="text" name="age" style="color: black"/>*</p>
+                                <p>学校: <input class="text" type="text" name="school" style="color: black"/>*</p>
+<!--                             </form> -->
+                        </div>
+                        <div class="col-md-4 service-grid">
+<!--                             <form action="/example/html/form_action.asp" method="get"> -->
+                                <p>学位: <input class="text" type="text" name="background" style="color: black"/>*</p>
+                                <p>专业: <input class="text" type="text" name="major" style="color: black"/>*</p>
+<!--                             </form> -->
+                        </div>
+                        <div class="col-md-4 service-grid">
+<!--                             <form action="/example/html/form_action.asp" method="get"> -->
+                                <p>职位: <input class="text" type="text" name="position" style="color: black"/>*</p>
+                                <p>技能: <input class="text" type="text" name="skill" style="color: black"/></p>
+<!--                             </form> -->
+                        </div>
+                        <div class="col-md-4 service-grid ">
+<!--                             <form action="/example/html/form_action.asp" method="get"> -->
+                                <p>项目: <input class="text" type="text" name="project" style="color: black"/></p>
+                                <p>薪资: <input class="text" type="text" name="salary" style="color: black"/></p>
+                                <p> <input type="submit" value="提交" style="background-color: rgb(196,81,88);border:solid 1px;"/></p>
+<!--                             </form> -->
+                        </div>
+            
+						</form>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <!--<input class="btn submit" type="submit" value="提交" style="color: white; background: indianred;"/>-->
+                        </div>
+                    </div>
+
+                    <p style="text-align: left; color: white;font-size: 17px; margin-top: 40px; margin-bottom: 50px;">方式二 上传简历文件</p> 
+                    <div style="text-align: left;"><input class="text" type="text" name="fname" value="C:\myrusume.doc" style=" padding: 3px;"/>&nbsp;&nbsp;&nbsp;<input class="btn submit" type="submit" value="上传我的简历" style="color: white; background: indianred;"/>
+                    </div>
+
+                    <script>
+                        $(document).ready(function () {
+                            $("#flip1").click(function () {
+                                $("#panel1").slideToggle("slow");
+                            });
+                        });
+                        $(document).ready(function () {
+                            $("#flip2").click(function () {
+                                $("#panel2").slideToggle("slow");
+                            });
+                        });
+                    </script>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

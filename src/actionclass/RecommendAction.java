@@ -18,7 +18,16 @@ public class RecommendAction {
 	private String skill;
 	private String project;
 	private String salary;
+	private String gender;
 	
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
 	private LineGraph lineGraph;
 	private LineNodeSet nodeSet;
 	
@@ -58,7 +67,7 @@ public class RecommendAction {
 			resultArr = distanceObj.get_result_array().clone();
 			for(int i=1;i<resultArr.length;i++){
 				similarPerson[i] = "";
-				for(int j=0;j<resultArr[j].length;j++){
+				for(int j=1;j<resultArr[j].length;j++){
 					if(resultArr[i][j] == null) continue;
 					similarPerson[i] += (resultArr[i][j]+" ");
 				}

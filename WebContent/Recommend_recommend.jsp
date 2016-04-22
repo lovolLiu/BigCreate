@@ -1,892 +1,1264 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
-
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en-us">
-<head>
-<title>Developer</title>
+    <head>
+    	<title>Developer</title>
 
-<!-- meta -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- stylesheet -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+				<link rel="stylesheet" href="css/owl.theme.min.css">
+        <link rel="stylesheet" href="css/animate.css">
+				<link rel="stylesheet" href="css/main.css">
+				<link rel="stylesheet" href="css/adjector.css">
+				<link rel="stylesheet" href="css/slick.css"> 
 
-<!-- stylesheet -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
-<link rel="stylesheet" href="css/owl.carousel.css">
-<link rel="stylesheet" href="css/owl.theme.min.css">
-<link rel="stylesheet" href="css/animate.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/adjector.css">
+		<!-- google font -->
+        <link href='http://fonts.useso.com/css?family=Oswald:300,400' rel='stylesheet'>
+        <link href='http://fonts.useso.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.useso.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.useso.com/css?family=Roboto+Condensed:400,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.useso.com/css?family=Oxygen:400,300' rel='stylesheet' type='text/css'>
+        <link href="http://fonts.useso.com/css?family=Rouge+Script" rel="stylesheet" type="text/css">
+        <link href='http://fonts.useso.com/css?family=Milonga' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <div class="content-block" id="header">
+            <div id="overlay-1">
+                <header id="site-header" class="clearfix">
+                    <div class="pull-left">
+                        <h1><a href="#header">FunJob</a></h1>
+                    </div>
+                    <div class="pull-right">
+                        <nav class="navbar site-nav" role="navigation">
+                            <!-- Brand and toggle get grouped for better mobile display -->
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <i class="fa fa-bars fa-2x"></i>
+                                </button>
+                            </div>
 
-<!-- google font -->
-<link href='http://fonts.useso.com/css?family=Oswald:300,400'
-	rel='stylesheet'>
-<link href='http://fonts.useso.com/css?family=Open+Sans'
-	rel='stylesheet' type='text/css'>
-<link href='http://fonts.useso.com/css?family=PT+Sans' rel='stylesheet'
-	type='text/css'>
-<link href='http://fonts.useso.com/css?family=Roboto+Condensed:400,300'
-	rel='stylesheet' type='text/css'>
-<link href='http://fonts.useso.com/css?family=Oxygen:400,300'
-	rel='stylesheet' type='text/css'>
-<link href="http://fonts.useso.com/css?family=Rouge+Script"
-	rel="stylesheet" type="text/css">
-<link href='http://fonts.useso.com/css?family=Milonga' rel='stylesheet'
-	type='text/css'>
-<style>
-.echarts-tooltip a {
-	color: white;
-}
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li class="active"><a href="#header"><i class="fa fa-home"></i> <span>主页</span></a></li>
+                                    <li><a href="#services"><i class="fa fa-star"></i> 大数据分析</a></li>
+                                    <li><a href="#portfolio-5"><i class="fa fa-bookmark"></i> 更多简历</a></li>
+                                    <li><a href="#contact" id="contact-button"><i class="fa fa-user" ></i> 信息输入</a></li>
+                                    
+                 
+                                    <li><a href="#portfolio-1" id="tubutton-1"><i class="fa fa-bookmark"></i> 实力评估</a></li>
+                                    <li><a href="#portfolio-2" id="tubutton-2"><i class="fa fa-bookmark"></i> 薪资规划</a></li>
+                                    <li><a href="#portfolio-3" id="tubutton-3"><i class="fa fa-bookmark"></i> 职位波动</a></li>
+                                    <li><a href="#portfolio-4" id="tubutton-4"><i class="fa fa-bookmark"></i> 相似的人</a></li>
+                                    <li><a href="#testimonials" id="tubutton-5"><i class="fa fa-bank"></i> 团队介绍</a></li>
+                                   
+                                </ul>
+                            </div>  <!-- /.navbar-collapse -->
+                        </nav>
+                    </div>
+                </header>	<!-- site-header -->
+                
+                <div class="middle text-center clearfix">
+                    <div class="container">
+	                    
+                        <h1 class="pro-name"><span class="adject"> Seeking | Fun </span> <span class="adject"> Job | Job </span> <span class="adject"> Fun | Seeking </span><!-- <span style="color: #71b644;" > --><!-- </span> --></h1>
+                        <p class="tagline">大数据职业规划平台</p>
+                        <div class="skills">
 
-input[type="text"], input[type="email"], select {
-	background: transparent none repeat scroll 0 0;
-	border: 1px solid rgb(0, 129, 129);
-	color: black;
-	margin: 0 auto 20px;
-	padding: 12px 15px;
-	width: 65%;
-}
-</style>
-
-
-</head>
-
-<body>
-	<div class="content-block" id="header">
-		<div id="overlay-1">
-			<header id="site-header" class="clearfix">
-				<div class="pull-left">
-					<h1>
-						<a href="#header">FunJob</a>
-					</h1>
-				</div>
-				<div class="pull-right">
-					<nav class="navbar site-nav" role="navigation">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle"
-								data-toggle="collapse"
-								data-target="#bs-example-navbar-collapse-1">
-								<i class="fa fa-bars fa-2x"></i>
-							</button>
-						</div>
-
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse"
-							id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<li class="active"><a href="#header"><i
-										class="fa fa-home"></i> <span>主页</span></a></li>
-								<li><a href="#services"><i class="fa fa-star"></i>
-										大数据分析</a></li>
-								<li><a href="#contact" id="contact-button"><i
-										class="fa fa-user"></i> 信息输入</a></li>
-
-								<li><a href="#portfolio-5" id="contact-button"><i
-										class="fa fa-user"></i> 更多简历</a></li>
-
-								<li><a href="#portfolio-1" id="tubutton-1"><i
-										class="fa fa-bookmark"></i> 实力评估</a></li>
-								<li><a href="#portfolio-3" id="tubutton-3"><i
-										class="fa fa-bookmark"></i> 技能推荐</a></li>
-								<li><a href="#portfolio-2" id="tubutton-2"><i
-										class="fa fa-bookmark"></i> 薪资规划</a></li>
-
-								<li><a href="#portfolio-4" id="tubutton-4"><i
-										class="fa fa-bookmark"></i> 相似的人</a></li>
-								<li><a href="#testimonials" id="tubutton-5"><i
-										class="fa fa-bank"></i> 团队介绍</a></li>
-
-							</ul>
-						</div>
-						<!-- /.navbar-collapse -->
-					</nav>
-				</div>
-			</header>
-			<!-- site-header -->
-
-			<div class="middle text-center clearfix">
-				<div class="container">
-
-					<h1 class="pro-name">
-						<span class="adject"> Seeking | Fun </span> <span class="adject">
-							Job | Job </span> <span class="adject"> Fun | Seeking </span>
-						<!-- <span style="color: #71b644;" > -->
-						<!-- </span> -->
-					</h1>
-					<p class="tagline">大数据职业规划平台</p>
-					<div class="skills"></div>
-					<!-- skills -->
-					<a href="#contact" target="_blank"
-						class="btn btn-lg btn-hire wow animated zoomIn"
-						id="contact-button-2">Hire me</a>
-				</div>
-				<!-- container -->
-			</div>
-			<!-- middle -->
-
-			<div class="bottom text-center">
-				<a href="#services"><i class="fa fa-angle-down fa-3x pulse"></i></a>
-			</div>
-		</div>
-		<!-- overlay-1 -->
-	</div>
-	<!-- content-block -->
-
-	<div id="services" class="content-block">
-		<div id="numbers" class="parallax">
-			<div class="overlay">
-				<!-- title -->
-				<div class="container-fluid numbers-title">
-					<div class="container">
-						<div class="row block-heading">
-							<h1>我们拥有海量的数据</h1>
-						</div>
-					</div>
-				</div>
-				<div class="container-fluid">
-					<!-- number list -->
-					<ul class="numbersList">
-						<li class="col-md-2 col-sm-4 col-xs-6">
-							<h4>简历/条</h4> <span id="number1" class="count1 count-timer">240300</span>
-						</li>
-						<li class="col-md-2 col-sm-4 col-xs-6">
-							<h4>学校/所</h4> <span id="number2" class="count2">2752</span>
-						</li>
-						<li class="col-md-2 col-sm-4 col-xs-6">
-							<h4>公司/个</h4> <span id="number3" class="count3">28583</span>
-						</li>
-						<li class="col-md-2 col-sm-4 col-xs-6">
-							<h4>技能/个</h4> <span id="number4" class="count4">1394</span>
-						</li>
-
-						<li class="col-md-2 col-sm-4 col-xs-6">
-							<h4>职位/个</h4> <span id="number5" class="count5">94</span>
-						</li>
-					</ul>
-					<!-- numbersList end -->
-				</div>
-				<!-- 
+                        </div>  <!-- skills -->
+                        <a href="#contact" target="_blank" class="btn btn-lg btn-hire wow animated zoomIn" id="contact-button-2">Hire me</a>
+                    </div>  <!-- container -->
+                </div>  <!-- middle -->
+                
+                <div class="bottom text-center">
+                    <a href="#services"><i class="fa fa-angle-down fa-3x pulse"></i></a>
+                </div>
+            </div>  <!-- overlay-1 -->
+        </div>  <!-- content-block -->
+        
+        <div id="services" class="content-block">
+            <div id="numbers" class="parallax">
+                <div class="overlay">
+                    <!-- title -->
+                    <div class="container-fluid numbers-title">
+                        <div class="container">
+                            <div class="row block-heading">
+                                <h1>我们拥有海量的数据</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <!-- number list -->
+                        <ul class="numbersList">
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <h4> 简历/条</h4>
+                                <span id="number1" class="count1 count-timer">240300</span>
+                            </li>
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <h4> 学校/所</h4>
+                                <span id="number2" class="count2">2752</span>
+                            </li>
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <h4> 公司/个</h4>
+                                <span id="number3"  class="count3">28583</span>
+                            </li>
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <h4> 技能/个</h4>
+                                <span id="number4" class="count4">1394</span>
+                            </li>
+                          
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <h4> 职位/个</h4>
+                                <span id="number5" class="count5">94</span>
+                            </li>
+                        </ul><!-- numbersList end -->
+                    </div><!-- 
 	                    
 	                   end -->
+                </div><!-- overlay end -->
+            </div>
+        </div>
+         </div>
+         
+         
+         <div class="content-block text-center" id="portfolio-5">
+	        <div class="overlay-4">
+            <header class="block-heading cleafix">
+                <h1>更多简历</h1>
+                <!-- <p>Take a look at some of my recent products</p> -->
+                <p>这里有很多人的经历.参考他们的职业轨迹，找到260000条简历中与他们相似的人</p>
+            </header>
+			<!-----------------图图图图图图---------->
+		
+			<div id="resume-ul" class="slides" style="color: rgb(0, 129, 129);">
+            <div class="resume-ul" style="height:500px; width: 100%; margin-top: 10px;">
+	            <div class="left" style="width: 13.5%; float: left; height: 400px;"></div>
+	           <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="Recommend_recommend?age=30&school=北京邮电大学&background=本科&major=计算机科学&position=搜索算法&salary=&skill=自然语言处理 &project=">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               							年龄: 30 <br> 学校: 北京邮电大学 <br> 学历: 本科 <br>
+								专业: 计算机科学 <br> 技能: 自然语言处理 <br> 领域: 搜索算法
+               </div>
+              </div>
+	           <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="Recommend_recommend?age=29&school=北京大学&background=硕士&major=计算机科学&position=精准推荐&salary=&skill=Haskell&project=">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">张先生</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 29 <br> 学校: 北京大学 <br> 学历: 硕士 <br> 专业: 计算机科学
+							<br> 技能: Haskell <br> 领域:精准推荐
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="Recommend_recommend?age=20&school=清华大学&background=硕士&major=计算机科学&position=后端开发&salary=&skill=php&project=">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">王先生</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	              年龄: 20 <br> 学校: 清华大学 <br> 学历: 硕士 <br> 专业: 计算机科学
+							<br> 技能: php <br> 领域: 后端开发
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="Recommend_recommend?age=39&school=电子科技大学&background=本科 &major=计算机科学&position=交互设计&salary=&skill=Haskell&project=">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">杨先生</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 39 <br> 学校: 电子科技大学 <br> 学历: 本科 <br> 专业: 计算机科学
+							<br> 技能: ps <br> 领域: 交互设计
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="Recommend_recommend?age=40&school=北京邮电大学&background=硕士&major=计算机科学&position=高端技术&salary=&skill=Haskell&project=">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">付女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 40 <br> 学校: 北京邮电大学 <br> 学历: 硕士 <br> 专业: 计算机科学
+							<br> 技能: Haskell <br> 领域: 高端技术
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="Recommend_recommend?age=42&school=西安电子科技大学&background=硕士&major=计算机科学&position=web前端开发工程师&salary=&skill=html&project=">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">雷女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 42 <br> 学校: 西安电子科技大学 <br> 学历: 硕士 <br> 专业: 计算机科学
+							<br> 技能: html <br> 领域: web前端开发工程师
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="Recommend_recommend?age=30&school=上海交大&background=本科&major=软件工程&position=Perl工程师&salary=&skill=java&project=">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄:30<br> 学校 : 上海交大 <br> 学历 : 本科<br> 专业 : 软件工程<br> 技能 : java <br> 领域 : Perl工程师
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="Recommend_recommend?age=27&school=北航&background=本科&major=软件工程&position=算法&salary=&skill=java&project=">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄:27<br> 学校 : 北航 <br> 学历 : 本科<br> 专业 : 软件工程<br> 技能 : java <br> 领域 : 算法
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="Recommend_recommend?age=30&school=北京邮电大学&background=硕士&major=计算机科学&position=算法分析&salary=&skill=Haskell&project=">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">王女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄:30<br> 学校 : 北京邮电大学 <br> 学历 : 硕士<br> 专业 : 计算机科学<br> 技能 : C++ <br> 领域 : 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="Recommend_recommend?age=42&school=西安电子科技大学&background=硕士&major=计算机科学&position=前端开发&salary=&skill=html&project=">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">张女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄:42<br> 学校 : 西安电子科技大学 <br> 学历 : 硕士<br> 专业 : 计算机科学<br> 技能 : C <br> 领域 : C语言工程师
+               </div>
+              </div>
+              
+	            
+	            <div class="right" style="width: 10%; float: right; height: 400px;"></div>
+              
+            </div>	<!-- isotope portfolio-items -->
+            <div class="resume-ul" style="height:500px; width: 100%; margin-top: 10px;">
+	            <div class="left" style="width: 13.5%; float: left; height: 400px;"></div>
+	           <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+	           <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              
+	            
+	            <div class="right" style="width: 10%; float: right; height: 400px;"></div>
+              
+            </div>	<!-- isotope portfolio-items -->
+            <div class="resume-ul" style="height:500px; width: 100%; margin-top: 10px;">
+	            <div class="left" style="width: 13.5%; float: left; height: 400px;"></div>
+	           <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+	           <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              <div class="resume-single" style="width: 14%; float:left; height: 230px; background:rgba(255, 255, 255, 0.7); color:rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
+	            <div class="re-head" style="font-size: 15px; width: 100%; border-bottom-width: 2px; border-bottom-color: rgb(0, 129, 129);">
+		            <a style="width: 30%; float: left; height: 40px;" href="#">
+		            <img src="img/avatar.jpg" style="width: 40px; height: 40px; margin: 10px 10px 5px 10px; ">
+                </a>
+                <div class="name" style="width: 70%; float: left; margin-top: 23px;"> 
+	                <legend style="width: 80%; border-bottom-width: 2px; font-size: 18px;">李女士</legend>
+	              </div>
+               </div>
+               <div class="resume-content" style="width: 100%; margin-left: 10px; margin-right: 5px;"> 
+	               年龄: 30
+	               <br>
+	               学校: 北京邮电大学
+	               <br>
+	               学历: 硕士
+	               <br>
+	               专业: 计算机科学
+	               <br>
+	               技能: Haskell
+	               <br>
+	               领域: 算法分析
+               </div>
+              </div>
+              
+	            
+	            <div class="right" style="width: 10%; float: right; height: 400px;"></div>
+              
+            </div>	<!-- isotope portfolio-items -->
+
 			</div>
-			<!-- overlay end -->
-		</div>
-	</div>
-	</div>
+	        </div>
+        </div>  <!-- content-block -->
+<!--------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------------->
+         
+         
+        <div class="content-block" id="contact">
+            <div class="overlay-3">
+                <header class="block-heading cleafix text-center">
+                    <h1>为你精心策划的职业路线</h1>
+                    <!-- <p>Feel Free to Contact</p> -->
+                    <p>选择下面的一种方式输入简历信息，获取2种精准的职业分析和规划路线</p>
+                </header>
+                <div class="block-content text-center">
+                    <div class="container">
+                        <div class="row">
+	                        <form id="header-form">
+	                            <legend>填写简历信息</legend>
+                            </form>
+                            <br>
+						<form class="contact-form" id="contact-form"
+							action="Recommend_recommend">
+							<div class="col-md-6 wow animated fadeInLeft" id="tofadeInLeft">
 
+								<fieldset>
 
-	<div class="content-block" id="contact">
-		<div class="overlay-3">
-			<header class="block-heading cleafix text-center">
-				<h1>为你精心策划的职业路线</h1>
-				<!-- <p>Feel Free to Contact</p> -->
-				<p>选择下面的一种方式输入简历信息，获取2种精准的职业分析和规划路线</p>
-			</header>
-			<div class="block-content text-center">
-				<div class="container">
-					<div class="row">
-						<form id="header-form">
-							<legend>填写简历信息</legend>
-						</form>
-						<br>
-						<div class="col-md-6 wow animated fadeInLeft" id="tofadeInLeft">
-							<form class="contact-form" id="contact-form"
-								action="Recommend_recommend">
+									<legend>基本信息*</legend>
+									<p>
+										性别 <input type="text" name="gender" value="${gender}">
+									</p>
+
+									<p>
+										年龄 <input type="text" name="age" value="${age}">
+									</p>
+								</fieldset>
 								<fieldset>
 									<legend>教育信息*</legend>
+
 									<p>
-										年龄 <input type="text" name="age" value="${age }">
+										学校 <input type="text" name="school" value="${school}">
 									</p>
 
 									<p>
-										学校 <input type="text" name="school" value="${school }">
+										学位 <input type="text" name="background" value="${background}">
 									</p>
 
 									<p>
-										学位 <input type="text" name="background" value="${background }">
+										专业 <input type="text" name="major" value="${major}">
 									</p>
+								</fieldset>
 
+
+							</div>
+							<div class="col-md-6 wow animated fadeInRight" id="tofadeInRight">
+								<fieldset>
+									<legend>期望工作*</legend>
 									<p>
-										专业 <input type="text" name="major" value="${major }">
+										期望职位 <select name="position">
+											<option value=".net工程师">.net工程师</option>
+											<option value="C/C++工程师">C/C++工程师</option>
+											<option value="DBA工程师">DBA工程师</option>
+											<option value="Hadoop工程师">Hadoop工程师</option>
+											<option value="Java工程师">Java工程师</option>
+											<option value="Perl工程师">Perl工程师</option>
+											<option value="php开发工程师">php开发工程师</option>
+											<option value="Python工程师">Python工程师</option>
+											<option value="ruby工程师">ruby工程师</option>
+											<option value="web前端开发工程师">web前端开发工程师</option>
+											<option value="交互设计">交互设计</option>
+											<option value="产品设计师">产品设计师</option>
+											<option value="企业软件">企业软件</option>
+											<option value="全栈工程师">全栈工程师</option>
+											<option value="后端开发">后端开发</option>
+											<option value="市场营销">市场营销</option>
+											<option value="搜索算法">搜索算法</option>
+											<option value="数据挖掘工程师">数据挖掘工程师</option>
+											<option value="测试工程师">测试工程师</option>
+											<option value="移动产品设计师">移动产品设计师</option>
+											<option value="精准推荐">精准推荐</option>
+											<option value="自然语言处理工程师">自然语言处理工程师</option>
+											<option value="视觉设计">视觉设计</option>
+											<option value="运维工程师">运维工程师</option>
+											<option value="高端技术">高端技术</option>
+										</select>
 									</p>
-									<fieldset>
-										<legend>期望工作*</legend>
-										<p>
-											期望职位
-											<!-- 		<input type="text" name="position" value="Java工程师"> -->
+									<p>
+										期望月薪 <input type="number" name="salary" value="${salary}">
+									</p>
 
-											<select name="position">
-												<option value=".net工程师">.net工程师</option>
-												<option value="C/C++工程师">C/C++工程师</option>
-												<option value="DBA工程师">DBA工程师</option>
-												<option value="Hadoop工程师">Hadoop工程师</option>
-												<option value="Java工程师">Java工程师</option>
-												<option value="Perl工程师">Perl工程师</option>
-												<option value="php开发工程师">php开发工程师</option>
-												<option value="Python工程师">Python工程师</option>
-												<option value="ruby工程师">ruby工程师</option>
-												<option value="web前端开发工程师">web前端开发工程师</option>
-												<option value="交互设计">交互设计</option>
-												<option value="产品设计师">产品设计师</option>
-												<option value="企业软件">企业软件</option>
-												<option value="全栈工程师">全栈工程师</option>
-												<option value="后端开发">后端开发</option>
-												<option value="市场营销">市场营销</option>
-												<option value="搜索算法">搜索算法</option>
-												<option value="数据挖掘工程师">数据挖掘工程师</option>
-												<option value="测试工程师">测试工程师</option>
-												<option value="移动产品设计师">移动产品设计师</option>
-												<option value="精准推荐">精准推荐</option>
-												<option value="自然语言处理工程师">自然语言处理工程师</option>
-												<option value="视觉设计">视觉设计</option>
-												<option value="运维工程师">运维工程师</option>
-												<option value="高端技术">高端技术</option>
-											</select>
-										</p>
-										<p>
-											期望月薪 <input type="number" name="salary" value="${salary }">
-										</p>
-
-									</fieldset>
-						</div>
-						<div class="col-md-6 wow animated fadeInRight" id="tofadeInRight">
-
-
-							<fieldset>
-								<legend>专业经历</legend>
-								<p>
-									熟悉技能
-									<textarea type="text" name="skill" rows="6">${skill }</textarea>
-								</p>
-								项目经历
-								<textarea type="text" name="project" rows="7">${project }</textarea>
-							</fieldset>
-							<input type="submit" value="提交">
-							</form>
-							<br> <br> <br>
-						</div>
-
-						<form id="header-form">
-							<legend>上传简历文件</legend>
+								</fieldset>
+								<fieldset>
+									<legend>专业经历</legend>
+									<p>
+										熟悉技能
+										<textarea type="text" name="skill" value="软件工程师" rows="1">${skill}</textarea>
+									</p>
+									项目经历
+									<textarea type="text" name="project" value="软件工程师" rows="4">${project}</textarea>
+								</fieldset>
+								<input type="submit" value="提交"> <br>
+								<br>
+								<br>
+							</div>
 						</form>
-						<br>
-						<div class="col-md-6 wow animated fadeInLeft" id="tofadeInLeft">
-							<p>
-								<input type="file" name="file">
-							</p>
-						</div>
-						<div class="col-md-6 wow animated fadeInRight" id="tofadeInRight">
-							<input type="submit" value="提交">
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- block-content -->
-		</div>
-		<!-- overlay-3 -->
-	</div>
-	<!-- content-block -->
+						<form id="header-form">
+	                            <legend>上传简历文件</legend>
+                            </form>
+                            <br>
+                            <div class="col-md-6 wow animated fadeInLeft" id="tofadeInLeft">
+	                            <p> <input type="file" name="file">  </p>
+                            </div>
+                            <div class="col-md-6 wow animated fadeInRight" id="tofadeInRight">
+	                            <input type="submit" value="提交">
+                            </div>
+                        </div>
+                    </div>
+                </div>	<!-- block-content -->
+            </div>	<!-- overlay-3 -->
+        </div>	<!-- content-block -->
 
 
 
-<div class="content-block text-center" id="portfolio-5">
-		<div class="overlay-4">
-			<header class="block-heading cleafix">
-				<h1>更多简历</h1>
-				<!-- <p>Take a look at some of my recent products</p> -->
-				<p>这里有很多人的经历.参考他们的职业轨迹，找到260000条简历中与他们相似的人</p>
-			</header>
+        <div class="content-block text-center" id="portfolio-1">
+	        <div class="overlay-4" id="tu-1">
+            <header class="block-heading cleafix">
+                <h1>当前实力评估</h1>
+                <!-- <p>Take a look at some of my recent products</p> -->
+                <p>根据你输入的信息，我们对你的实力做出了如下评估</p>
+            </header>
 
-			<div id="resume-ul">
-				<div class="resume-ul" style="height: 500px; width: 100%;">
-					<div class="left" style="width: 13.5%; float: left; height: 400px;"></div>
-					<div class="resume-single"
-						style="width: 14%; float: left; height: 230px; background: rgba(255, 255, 255, 0.7); color: rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
-						<legend
-							style="font-size: 15px; width: 80%; border-bottom-width: 2px;">
-							<a style="" href="Recommend_recommend?age=30&school=北京邮电大学&background=本科&major=计算机科学&position=搜索算法&salary=&skill=自然语言处理 &project="> <img
-								src="http://www.gravatar.com/avatar/hash"
-								style="width: 40px; height: 40px; margin: 10px 10px 5px 10px;">
-							</a> 李女士
-						</legend>
-						<div class="resume-content"
-							style="width: 100%; margin-left: 10px; margin-right: 5px;">
-							年龄: 30 <br> 学校: 北京邮电大学 <br> 学历: 本科 <br>
-								专业: 计算机科学 <br> 技能: 自然语言处理 <br> 领域: 搜索算法
-						</div>
-					</div>
-					<div class="resume-single"
-						style="width: 14%; float: left; height: 230px; background: rgba(255, 255, 255, 0.7); color: rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
-						<legend
-							style="font-size: 15px; width: 80%; border-bottom-width: 2px;">
-							<a style="" href="Recommend_recommend?age=29&school=北京大学&background=硕士&major=计算机科学&position=精准推荐&salary=&skill=Haskell&project="> <img
-								src="http://www.gravatar.com/avatar/hash"
-								style="width: 40px; height: 40px; margin: 10px 10px 5px 10px;">
-							</a> 张先生
-						</legend>
-						<div class="resume-content"
-							style="width: 100%; margin-left: 10px; margin-right: 5px;">
-							年龄: 29 <br> 学校: 北京大学 <br> 学历: 硕士 <br> 专业: 计算机科学
-							<br> 技能: Haskell <br> 领域:精准推荐
-						</div>
-					</div>
-					<div class="resume-single"
-						style="width: 14%; float: left; height: 230px; background: rgba(255, 255, 255, 0.7); color: rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
-						<legend
-							style="font-size: 15px; width: 80%; border-bottom-width: 2px;">
-							<a style="" href="Recommend_recommend?age=20&school=清华大学&background=硕士&major=计算机科学&position=后端开发&salary=&skill=php&project="> <img
-								src="http://www.gravatar.com/avatar/hash"
-								style="width: 40px; height: 40px; margin: 10px 10px 5px 10px;">
-							</a> 王先生
-						</legend>
-						<div class="resume-content"
-							style="width: 100%; margin-left: 10px; margin-right: 5px;">
-							年龄: 20 <br> 学校: 清华大学 <br> 学历: 硕士 <br> 专业: 计算机科学
-							<br> 技能: php <br> 领域: 后端开发
-						</div>
-					</div>
-					<div class="resume-single"
-						style="width: 14%; float: left; height: 230px; background: rgba(255, 255, 255, 0.7); color: rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
-						<legend
-							style="font-size: 15px; width: 80%; border-bottom-width: 2px;">
-							<a style="" href="Recommend_recommend?age=39&school=电子科技大学&background=本科 &major=计算机科学&position=交互设计&salary=&skill=Haskell&project="> <img
-								src="http://www.gravatar.com/avatar/hash"
-								style="width: 40px; height: 40px; margin: 10px 10px 5px 10px;">
-							</a> 杨先生
-						</legend>
-						<div class="resume-content"
-							style="width: 100%; margin-left: 10px; margin-right: 5px;">
-							年龄: 39 <br> 学校: 电子科技大学 <br> 学历: 本科 <br> 专业: 计算机科学
-							<br> 技能: ps <br> 领域: 交互设计
-						</div>
-					</div>
-					<div class="resume-single"
-						style="width: 14%; float: left; height: 230px; background: rgba(255, 255, 255, 0.7); color: rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
-						<legend
-							style="font-size: 15px; width: 80%; border-bottom-width: 2px;">
-							<a style="" href="Recommend_recommend?age=40&school=北京邮电大学&background=硕士&major=计算机科学&position=高端技术&salary=&skill=Haskell&project="> <img
-								src="http://www.gravatar.com/avatar/hash"
-								style="width: 40px; height: 40px; margin: 10px 10px 5px 10px;">
-							</a> 付女士
-						</legend>
-						<div class="resume-content"
-							style="width: 100%; margin-left: 10px; margin-right: 5px;">
-							年龄: 40 <br> 学校: 北京邮电大学 <br> 学历: 硕士 <br> 专业: 计算机科学
-							<br> 技能: Haskell <br> 领域: 高端技术
-						</div>
-					</div>
-					<div class="resume-single"
-						style="width: 14%; float: left; height: 230px; background: rgba(255, 255, 255, 0.7); color: rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
-						<legend
-							style="font-size: 15px; width: 80%; border-bottom-width: 2px;">
-							<a style="" href="Recommend_recommend?age=42&school=西安电子科技大学&background=硕士&major=计算机科学&position=web前端开发工程师&salary=&skill=html&project="> <img
-								src="http://www.gravatar.com/avatar/hash"
-								style="width: 40px; height: 40px; margin: 10px 10px 5px 10px;">
-							</a> 李女士
-						</legend>
-						<div class="resume-content"
-							style="width: 100%; margin-left: 10px; margin-right: 5px;">
-							年龄: 42 <br> 学校: 西安电子科技大学 <br> 学历: 硕士 <br> 专业: 计算机科学
-							<br> 技能: html <br> 领域: web前端开发工程师
-						</div>
-					</div>
-					<div class="resume-single"
-						style="width: 14%; float: left; height: 230px; background: rgba(255, 255, 255, 0.7); color: rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
-						<legend
-							style="font-size: 15px; width: 80%; border-bottom-width: 2px;">
-							<a style="" href="Recommend_recommend?age=30&school=上海交大&background=本科&major=软件工程&position=Perl工程师&salary=&skill=java&project="> <img
-								src="http://www.gravatar.com/avatar/hash"
-								style="width: 40px; height: 40px; margin: 10px 10px 5px 10px;">
-							</a> 李女士
-						</legend>
-						<div class="resume-content"
-							style="width: 100%; margin-left: 10px; margin-right: 5px;">
-							年龄:30<br> 学校 : 上海交大 <br> 学历 : 本科<br> 专业 : 软件工程<br> 技能 : java <br> 领域 : Perl工程师
-						</div>
-					</div>
-					<div class="resume-single"
-						style="width: 14%; float: left; height: 230px; background: rgba(255, 255, 255, 0.7); color: rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
-						<legend
-							style="font-size: 15px; width: 80%; border-bottom-width: 2px;">
-							<a style="" href="Recommend_recommend?age=27&school=北航&background=本科&major=软件工程&position=算法&salary=&skill=java&project="> <img
-								src="http://www.gravatar.com/avatar/hash"
-								style="width: 40px; height: 40px; margin: 10px 10px 5px 10px;">
-							</a> 李女士
-						</legend>
-						<div class="resume-content"
-							style="width: 100%; margin-left: 10px; margin-right: 5px;">
-							年龄:27<br> 学校 : 北航 <br> 学历 : 本科<br> 专业 : 软件工程<br> 技能 : java <br> 领域 : 算法
-						</div>
-					</div>
-					<div class="resume-single"
-						style="width: 14%; float: left; height: 230px; background: rgba(255, 255, 255, 0.7); color: rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
-						<legend
-							style="font-size: 15px; width: 80%; border-bottom-width: 2px;">
-							<a style="" href="Recommend_recommend?age=30&school=北京邮电大学&background=硕士&major=计算机科学&position=算法分析&salary=&skill=Haskell&project="> <img
-								src="http://www.gravatar.com/avatar/hash"
-								style="width: 40px; height: 40px; margin: 10px 10px 5px 10px;">
-							</a> 王女士
-						</legend>
-						<div class="resume-content"
-							style="width: 100%; margin-left: 10px; margin-right: 5px;">
-							年龄:30<br> 学校 : 北京邮电大学 <br> 学历 : 硕士<br> 专业 : 计算机科学<br> 技能 : C++ <br> 领域 : 算法分析
-						</div>
-					</div>
-					<div class="resume-single"
-						style="width: 14%; float: left; height: 230px; background: rgba(255, 255, 255, 0.7); color: rgb(0, 129, 129); margin: 5px 10px 5px 0px; text-align: left;">
-						<legend
-							style="font-size: 15px; width: 80%; border-bottom-width: 2px;">
-							<a style="" href="Recommend_recommend?age=42&school=西安电子科技大学&background=硕士&major=计算机科学&position=前端开发&salary=&skill=html&project="> <img
-								src="http://www.gravatar.com/avatar/hash"
-								style="width: 40px; height: 40px; margin: 10px 10px 5px 10px;">
-							</a> 张女士
-						</legend>
-						<div class="resume-content"
-							style="width: 100%; margin-left: 10px; margin-right: 5px;">
-年龄:42<br> 学校 : 西安电子科技大学 <br> 学历 : 硕士<br> 专业 : 计算机科学<br> 技能 : C <br> 领域 : C语言工程师
-						</div>
-					</div>
+				<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------图图图图图图---------->
+            <div id="mainradar" style="height:400px">
+              
+            </div>	<!-- 雷达图 -->
+	        </div>
+        </div>  <!-- content-block -->
 
-					<div class="right" style="width: 10%; float: right; height: 400px;"></div>
-
-				</div>
-				<!-- isotope portfolio-items -->
-			</div>
-		</div>
-	</div>
-	<!-- content-block -->
-
-
-
-
-
-
-
-
-
-	<div class="content-block text-center" id="portfolio-1">
-		<div class="overlay-4" id="tu-1">
-			<header class="block-heading cleafix">
-				<h1>当前实力评估</h1>
-				<!-- <p>Take a look at some of my recent products</p> -->
-				<p>根据你输入的信息，我们对你的实力做出了如下评估</p>
-			</header>
-
-			<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------图图图图图图---------->
-			<div id="mainradar" style="height: 400px"></div>
-			<!-- 雷达图 -->
-		</div>
-	</div>
-	<!-- content-block -->
-
-
-
-	<div class="content-block text-center" id="portfolio-3">
-		<div class="overlay-4" id="tu-3">
-			<header class="block-heading cleafix">
-				<h1>当上CEO，实现人生逆袭</h1>
-				<!-- <p>Take a look at some of my recent products</p> -->
-				<p>我们为你量身定制了今后应学习的技能</p>
-			</header>
-			<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------图图图图图图---------->
-			<div id="main2" style="height: 400px"></div>
-		</div>
-	</div>
-	<!-- content-block -->
-
-
-	<div class="content-block text-center" id="portfolio-2">
-		<div class="overlay-4" id="tu-2">
-			<header class="block-heading cleafix">
-				<h1>薪资节节高</h1>
-				<!-- <p>Take a look at some of my recent products</p> -->
-				<p>根据你给出的期望工资，我们对你的职业生涯做出了如下规划</p>
-			</header>
+      
+        <div class="content-block text-center" id="portfolio-2">
+	        <div class="overlay-4" id="tu-2">
+            <header class="block-heading cleafix">
+                <h1>薪资节节高</h1>
+                <!-- <p>Take a look at some of my recent products</p> -->
+                <p>根据你给出的期望工资，我们对你的职业生涯做出了如下规划</p>
+            </header>
 
 			<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------图图图图图图---------->
-			<div id="main1" style="height: 400px"></div>
-		</div>
-	</div>
-	<!-- content-block -->
-
-
-
-
-
-	<div class="content-block text-center" id="portfolio-4">
-		<div class="overlay-4" id="tu-4">
-			<header class="block-heading cleafix">
-				<h1>你不是一个人</h1>
-				<!-- <p>Take a look at some of my recent products</p> -->
-				<p>这里有很多人的经历与你相似.参考他们的职业轨迹，也许对你有帮助</p>
-			</header>
+            <div id="main1" style="height:400px">
+              
+            </div>	
+	        </div>
+        </div>  <!-- content-block -->
+        
+        
+        <div class="content-block text-center" id="portfolio-3">
+	        <div class="overlay-4" id="tu-3">
+            <header class="block-heading cleafix">
+                <h1>当上CEO，实现人生逆袭</h1>
+                <!-- <p>Take a look at some of my recent products</p> -->
+                <p>我们为你量身定制了今后十二年的职业路线</p>
+            </header>
+			<!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------图图图图图图---------->
+            <div id="main2" style="height:400px">
+              
+            </div>	
+	        </div>
+        </div>  <!-- content-block -->
+        
+        
+        <div class="content-block text-center" id="portfolio-4">
+	        <div class="overlay-4" id="tu-4">
+            <header class="block-heading cleafix">
+                <h1>你不是一个人</h1>
+                <!-- <p>Take a look at some of my recent products</p> -->
+                <p>这里有很多人的经历与你相似.参考他们的职业轨迹，也许对你有帮助</p>
+            </header>
 			<!-------------------------------------------------------------------------------------------------------------------------------------------------------------图图图图图图---------->
-			<div id="main3" style="height: 400px"></div>
-			<!-- isotope portfolio-items -->
-			<a href="#" class="btn btn-lg btn-view"> <i class="fa fa-eye"></i>
-				<span>View All</span>
-			</a>
-		</div>
-	</div>
-	<!-- content-block -->
-
-	
-
-
-	<div class="content-block" id="testimonials">
-		<header class="block-heading cleafix text-center" id="tu-5">
-			<h1>团队介绍</h1>
-			<!-- <p>Lorem Ipsum Text</p> -->
-		</header>
-		<div class="block-content text-center" id="tu-6">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<div class="owl-carousel">
-							<div class="owl-item">
-								<div class="testimonial">
-									<img alt="Client Photo" src="img/lxt.jpg">
-									<p>在这个项目中，负责协调和安排小组的工作进度，进行组内的人员协调和分工的工作安排,负责Hadoop的学习和使用。搭建伪分布式Hadoop平台，进行各个需要组件的安装和配置.</p>
-									<strong>刘昕彤</strong><br> <span>组长, Hadoop研究</span>
-								</div>
-							</div>
-							<!-- owl-item -->
-							<div class="owl-item">
-								<div class="testimonial">
-									<img alt="Client Photo" src="img/sc.jpg">
-									<p>在这个项目中，负责前台界面的设计，算法分析和数据预处理.
-										将json格式的简历信息进行文本格式的处理与分析，使其成为自然语言处理可以接受的规范格式.</p>
-									<strong>苏畅</strong><br> <span>项目成员, 算法分析</span>
-								</div>
-							</div>
-							<!-- owl-item -->
-							<div class="owl-item">
-								<div class="testimonial">
-									<img alt="Client Photo" src="img/yzq.jpg">
-									<p>在这个项目中，负责后台逻辑实现，以及前台与后台的连接. 包括数据的收集与整理，建立本体树,
-										数据的向量化，简历牛人二分类算法以及推荐算法的实现，利用echarts绘制职位展示效果图.</p>
-									<strong>杨智淇</strong><br> <span>项目成员, 后台实现</span>
-								</div>
-							</div>
-							<!-- owl-item -->
-							<div class="owl-item">
-								<div class="testimonial">
-									<img alt="Client Photo" src="img/fy.jpg">
-									<p>在这个项目中，负责后台逻辑实现，以及前台与后台的连接. 包括数据的收集与整理，建立本体树,
-										数据的向量化，简历牛人二分类算法以及推荐算法的实现，利用echarts绘制职位展示效果图.</p>
-									<strong>付钰</strong><br> <span>项目成员, 后台实现</span>
-								</div>
-							</div>
-							<!-- owl-item -->
-							<div class="owl-item">
-								<div class="testimonial">
-									<img alt="Client Photo" src="img/czq.jpg">
-									<p>I在这个项目中，负责项目的大数据平台的迁移与算法分析.
-										包括学习Hadoop搭建集群平台，使用Hbase建立数据库，通过Sqoop迁移MySQL中的数据，学习MapReduce以及Mahout.</p>
-									<strong>崔仲奇</strong><br> <span>项目成员, Hadoop研究</span>
-								</div>
-							</div>
-							<!-- owl-item -->
-						</div>
-						<!-- owl-carousel -->
-					</div>
-					<!-- col-md-12 -->
-				</div>
-				<!-- row -->
-			</div>
-			<!-- container -->
-		</div>
-		<!-- block-content -->
-	</div>
-	<!-- content-block -->
-	</div>
+            <div id="main3" style="height:400px">
+              
+            </div>	<!-- isotope portfolio-items -->
+            <a href="#" class="btn btn-lg btn-view">
+                <i class="fa fa-eye"></i>
+                <span>View All</span>
+            </a>
+	        </div>
+        </div>  <!-- content-block -->
+        
+        
+        <!--------------------------------------------------------------------------------------------
+	--------------------------------------------------------------------------------------------------------------->
+        
+        
+        
+            
+		<div class="content-block" id="testimonials">
+            <header class="block-heading cleafix text-center" id="tu-5">
+                <h1>团队介绍</h1>
+                <!-- <p>Lorem Ipsum Text</p> -->
+            </header>
+            <div class="block-content text-center" id="tu-6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                        	<div class="owl-carousel">
+								<div class="owl-item">
+									<div class="testimonial">
+                                        <img alt="Client Photo" src="img/lxt.jpg">
+                                        <p>在这个项目中，负责协调和安排小组的工作进度，进行组内的人员协调和分工的工作安排,负责Hadoop的学习和使用。搭建伪分布式Hadoop平台，进行各个需要组件的安装和配置.</p>
+                                        <strong>刘昕彤</strong><br>
+                                        <span>组长, Hadoop研究</span>
+                                    </div>
+								</div>	<!-- owl-item -->
+								<div class="owl-item">
+									<div class="testimonial">
+                                        <img alt="Client Photo" src="img/sc.jpg">
+                                        <p>在这个项目中，负责前台界面的设计，算法分析和数据预处理. 将json格式的简历信息进行文本格式的处理与分析，使其成为自然语言处理可以接受的规范格式.</p>
+                                        <strong>苏畅</strong><br>
+                                        <span>项目成员, 算法分析</span>
+                                    </div>
+								</div>	<!-- owl-item -->
+								<div class="owl-item">
+									<div class="testimonial">
+                                        <img alt="Client Photo" src="img/yzq.jpg">
+                                        <p>在这个项目中，负责后台逻辑实现，以及前台与后台的连接. 包括数据的收集与整理，建立本体树, 数据的向量化，简历牛人二分类算法以及推荐算法的实现，利用echarts绘制职位展示效果图.</p>
+                                        <strong>杨智淇</strong><br>
+                                        <span>项目成员, 后台实现</span>
+                                    </div>
+								</div>	<!-- owl-item -->
+								<div class="owl-item">
+									<div class="testimonial">
+                                        <img alt="Client Photo" src="img/fy.jpg">
+                                        <p>在这个项目中，负责后台逻辑实现，以及前台与后台的连接. 包括数据的收集与整理，建立本体树, 数据的向量化，简历牛人二分类算法以及推荐算法的实现，利用echarts绘制职位展示效果图. </p>
+                                        <strong>付钰</strong><br>
+                                        <span>项目成员, 后台实现</span>
+                                    </div>
+								</div>	<!-- owl-item -->
+								<div class="owl-item">
+									<div class="testimonial">
+                                        <img alt="Client Photo" src="img/czq.jpg">
+                                        <p>在这个项目中，负责项目的大数据平台的迁移与算法分析. 包括学习Hadoop搭建集群平台，使用Hbase建立数据库，通过Sqoop迁移MySQL中的数据，学习MapReduce以及Mahout.</p>
+                                        <strong>崔仲奇</strong><br>
+                                        <span>项目成员, Hadoop研究</span>
+                                    </div>
+								</div>	<!-- owl-item -->
+							</div>	<!-- owl-carousel -->
+						</div>	<!-- col-md-12 -->
+                    </div>	<!-- row -->
+                </div>	<!-- container -->
+            </div>	<!-- block-content -->
+        </div>	<!-- content-block -->
+     </div>
 
 
-	<footer id="site-footer">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="copyright">
-						<ul class="social-box">
-							<li>&copy; 2016 FunJob大数据分析招聘网站</li>
-						</ul>
-					</div>
-
-				</div>
-				<div class="col-sm-6">
-					<ul class="social-box">
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li><a class="facebook-icon" href="#"><i
-								class="fa fa-facebook"></i></a></li>
-						<li><a class="twitter-icon" href="#"><i
-								class="fa fa-twitter"></i></a></li>
-						<li><a class="g-plus-icon" href="#"><i
-								class="fa fa-google-plus"></i></a></li>
-						<li><a class="linkedin-icon" href="#"><i
-								class="fa fa-linkedin"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		</div>
-	</footer>
-	<!-- site-footer -->
+        <footer id="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="copyright"> 
+	                        <ul class="social-box">
+		                        <li>
+	                        &copy; 2016 FunJob大数据分析招聘网站
+		                        </li>
+	                        </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-6">
+                        <ul class="social-box">
+	                        <li></li><li></li><li></li><li></li><li></li>	<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>                        
+                                        <li><a class="facebook-icon" href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a class="twitter-icon" href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a class="g-plus-icon" href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a class="linkedin-icon" href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul></div>
+                    </div>
+                </div>
+            </div>
+        </footer>	<!-- site-footer -->
 
 
-	<!-- js -->
-	<script>
-		new WOW().init();
-	</script>
+        <!-- js -->
+        <script>
+            new WOW().init();
+        </script>
 
-	<script src="js/jquery-2.1.3.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.actual.min.js"></script>
-	<script src="js/isotope.pkgd.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.isonscreen.js"></script>
-	<script src="js/adjector.js"></script>
-	<script src="js/modernizr.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/main.js"></script>
+        <script src="js/jquery-2.1.3.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.actual.min.js"></script>
+        <script src="js/isotope.pkgd.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.isonscreen.js"></script>
+        <script src="js/adjector.js"></script>
+        <script src="js/modernizr.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/main.js"></script>
+				<script src="js/slick.min.js"></script>
 
-
-	<script type="text/javascript">
-		var position = "${position}";
-		$("option[value='${position}']").attr("selected", "selected");
-	</script>
-
-
-
-
-	<script>
-		$(document).ready(function() {
-			$("#tu-1").animate({
-				opacity : 0.25,
-				left : "+=10000",
-				height : "hide"
-			}, 1000, function() {
-				// Animation complete.
+        <script>
+        	$(document).ready(function(){
+	        	$('.slides').slick({
+						  infinite: true,
+						  slidesToShow: 1,
+						  slidesToScroll: 1
+      			});
+	        	$( "#tu-1" ).animate({
+				    opacity: 0.25,
+				    left: "+=10000",
+				    height: "hide"
+				  }, 1000, function() {
+				    // Animation complete.
+				  });
+				  $( "#tu-2" ).animate({
+				    opacity: 0.25,
+				    bottom: "+=10000",
+				    height: "hide"
+				  }, 1000, function() {
+				    // Animation complete.
+				  });
+				  $( "#tu-3" ).animate({
+				    opacity: 0.25,
+				    bottom: "+=10000",
+				    height: "hide"
+				  }, 1000, function() {
+				    // Animation complete.
+				  });
+	        	$( "#tu-4" ).animate({
+				    opacity: 0.25,
+				    bottom: "+=10000",
+				    height: "hide"
+				  }, 1000, function() {
+				    // Animation complete.
+				  });
+				  $( "#tu-5" ).animate({
+				    opacity: 0.25,
+				    bottom: "+=10000",
+				    height: "hide"
+				  }, 1000, function() {
+				    // Animation complete.
+				  });
+				  $( "#tu-6" ).animate({
+				    opacity: 0.25,
+				    width: "hide"
+				  }, 1000, function() {
+				    // Animation complete.
+				  });
+	        	$( "#tofadeInLeft" ).animate({
+				    opacity: 1,
+				    left: "-=1000"
+				    /*height: "toggle"*/
+				  }, 1500, function() {
+				    // Animation complete.
+				  });
+				  $( "#tofadeInRight" ).animate({
+				    opacity: 1,
+				    left: "+=1000"
+				    /*height: "toggle"*/
+				  }, 1500, function() {
+				    // Animation complete.
+				  });
+	        	$(".pro-name .adject").adjector({
+        			sep: "|",
+        			arm: 0
+      			});
+      			$( "#contact-button" ).click(function() {
+					if (!$("#tofadeInLeft").hasClass("animatedaa")){
+				  $( "#tofadeInLeft" ).animate({
+				    opacity: 1,
+				    left: "+=1000"
+				    /*height: "toggle"*/
+				  }, 1700, function() {
+				    // Animation complete.
+				  });
+				  $( "#tofadeInRight" ).animate({
+				    opacity: 1,
+				    left: "-=1000"
+				    /*height: "toggle"*/
+				  }, 1700, function() {
+				    // Animation complete.
+				  });
+				  $("#tofadeInLeft").addClass('animatedaa');
+				  }
+				});
+				$( "#contact-button-2" ).click(function() {
+					if (!$("#tofadeInLeft").hasClass("animatedaa")){
+				  $( "#tofadeInLeft" ).animate({
+				    opacity: 1,
+				    left: "+=1000"
+				    /*height: "toggle"*/
+				  }, 1700, function() {
+				    // Animation complete.
+				  });
+				  $( "#tofadeInRight" ).animate({
+				    opacity: 1,
+				    left: "-=1000"
+				    /*height: "toggle"*/
+				  }, 1700, function() {
+				    // Animation complete.
+				  });
+				  $("#tofadeInLeft").addClass('animatedaa');
+				  }
+				});
+				$( "#tubutton-1" ).click(function() {
+					if (!$("#tu-1").hasClass("animatedaa")){
+				  $( "#tu-1" ).animate({
+				    opacity: 1,
+				    left: "-=10000",
+				    height: "show"
+				  }, 1500, function() {
+				    // Animation complete.
+				  });
+				  
+				  $("#tu-1").addClass('animatedaa');
+				  }
+				});
+				$( "#tubutton-2" ).click(function() {
+					if (!$("#tu-2").hasClass("animatedaa")){
+				  $( "#tu-2" ).animate({
+				    opacity: 1,
+				    bottom: "-=10000",
+				    height: "show"
+				  }, 1500, function() {
+				    // Animation complete.
+				  });
+				  
+				  $("#tu-2").addClass('animatedaa');
+				  }
+				});
+				$( "#tubutton-3" ).click(function() {
+					if (!$("#tu-3").hasClass("animatedaa")){
+				  $( "#tu-3" ).animate({
+				    opacity: 1,
+				    bottom: "-=10000",
+				    height: "show"
+				  }, 1500, function() {
+				    // Animation complete.
+				  });
+				  
+				  $("#tu-3").addClass('animatedaa');
+				  }
+				});
+				$( "#tubutton-4" ).click(function() {
+					if (!$("#tu-4").hasClass("animatedaa")){
+				  $( "#tu-4" ).animate({
+				    opacity: 1,
+				    bottom: "-=10000",
+				    height: "show"
+				  }, 1500, function() {
+				    // Animation complete.
+				  });
+				  
+				  $("#tu-4").addClass('animatedaa');
+				  }
+				});
+				$( "#tubutton-5" ).click(function() {
+					if (!$("#tu-5").hasClass("animatedaa")){
+				  $( "#tu-5" ).animate({
+				    opacity: 1,
+				    bottom: "-=10000",
+				    height: "show"
+				  }, 2000, function() {
+				    // Animation complete.
+				  });
+				  
+				  $("#tu-5").addClass('animatedaa');
+				  }
+				  if (!$("#tu-6").hasClass("animatedaa")){
+				  $( "#tu-6" ).animate({
+				    opacity: 1,
+				    window: "show"
+				  }, 3000, function() {
+				    // Animation complete.
+				  });
+				  
+				  $("#tu-6").addClass('animatedaa');
+				  }
+				});
+  				$('.owl-carousel').owlCarousel({
+    				loop:true,
+    				margin:10,
+    				autoplay:true,
+    				autoplayTimeout:3000,
+    				autoplayHoverPause:true,
+    				responsiveClass:true,
+    				responsive:{
+        					0:{
+					            items:1,
+        					},
+					        600:{
+					            items:1,
+					        },
+					        1000:{
+					            items:1,
+					        }
+    				}
+				})
 			});
-			$("#tu-2").animate({
-				opacity : 0.25,
-				bottom : "+=10000",
-				height : "hide"
-			}, 1000, function() {
-				// Animation complete.
-			});
-			$("#tu-3").animate({
-				opacity : 0.25,
-				bottom : "+=10000",
-				height : "hide"
-			}, 1000, function() {
-				// Animation complete.
-			});
-			$("#tu-4").animate({
-				opacity : 0.25,
-				bottom : "+=10000",
-				height : "hide"
-			}, 1000, function() {
-				// Animation complete.
-			});
-			$("#tu-5").animate({
-				opacity : 0.25,
-				bottom : "+=10000",
-				height : "hide"
-			}, 1000, function() {
-				// Animation complete.
-			});
-			$("#tu-6").animate({
-				opacity : 0.25,
-				width : "hide"
-			}, 1000, function() {
-				// Animation complete.
-			});
-			$("#tofadeInLeft").animate({
-				opacity : 1,
-				left : "-=1000"
-			/*height: "toggle"*/
-			}, 1500, function() {
-				// Animation complete.
-			});
-			$("#tofadeInRight").animate({
-				opacity : 1,
-				left : "+=1000"
-			/*height: "toggle"*/
-			}, 1500, function() {
-				// Animation complete.
-			});
-			$(".pro-name .adject").adjector({
-				sep : "|",
-				arm : 0
-			});
-			$("#contact-button").click(function() {
-				if (!$("#tofadeInLeft").hasClass("animatedaa")) {
-					$("#tofadeInLeft").animate({
-						opacity : 1,
-						left : "+=1000"
-					/*height: "toggle"*/
-					}, 1700, function() {
-						// Animation complete.
-					});
-					$("#tofadeInRight").animate({
-						opacity : 1,
-						left : "-=1000"
-					/*height: "toggle"*/
-					}, 1700, function() {
-						// Animation complete.
-					});
-					$("#tofadeInLeft").addClass('animatedaa');
-				}
-			});
-			$("#contact-button-2").click(function() {
-				if (!$("#tofadeInLeft").hasClass("animatedaa")) {
-					$("#tofadeInLeft").animate({
-						opacity : 1,
-						left : "+=1000"
-					/*height: "toggle"*/
-					}, 1700, function() {
-						// Animation complete.
-					});
-					$("#tofadeInRight").animate({
-						opacity : 1,
-						left : "-=1000"
-					/*height: "toggle"*/
-					}, 1700, function() {
-						// Animation complete.
-					});
-					$("#tofadeInLeft").addClass('animatedaa');
-				}
-			});
-			$("#tubutton-1").click(function() {
-				if (!$("#tu-1").hasClass("animatedaa")) {
-					$("#tu-1").animate({
-						opacity : 1,
-						left : "-=10000",
-						height : "show"
-					}, 1500, function() {
-						// Animation complete.
-					});
-
-					$("#tu-1").addClass('animatedaa');
-				}
-			});
-			$("#tubutton-2").click(function() {
-				if (!$("#tu-2").hasClass("animatedaa")) {
-					$("#tu-2").animate({
-						opacity : 1,
-						bottom : "-=10000",
-						height : "show"
-					}, 1500, function() {
-						// Animation complete.
-					});
-
-					$("#tu-2").addClass('animatedaa');
-				}
-			});
-			$("#tubutton-3").click(function() {
-				if (!$("#tu-3").hasClass("animatedaa")) {
-					$("#tu-3").animate({
-						opacity : 1,
-						bottom : "-=10000",
-						height : "show"
-					}, 1500, function() {
-						// Animation complete.
-					});
-
-					$("#tu-3").addClass('animatedaa');
-				}
-			});
-			$("#tubutton-4").click(function() {
-				if (!$("#tu-4").hasClass("animatedaa")) {
-					$("#tu-4").animate({
-						opacity : 1,
-						bottom : "-=10000",
-						height : "show"
-					}, 1500, function() {
-						// Animation complete.
-					});
-
-					$("#tu-4").addClass('animatedaa');
-				}
-			});
-			$("#tubutton-5").click(function() {
-				if (!$("#tu-5").hasClass("animatedaa")) {
-					$("#tu-5").animate({
-						opacity : 1,
-						bottom : "-=10000",
-						height : "show"
-					}, 2000, function() {
-						// Animation complete.
-					});
-
-					$("#tu-5").addClass('animatedaa');
-				}
-				if (!$("#tu-6").hasClass("animatedaa")) {
-					$("#tu-6").animate({
-						opacity : 1,
-						window : "show"
-					}, 3000, function() {
-						// Animation complete.
-					});
-
-					$("#tu-6").addClass('animatedaa');
-				}
-			});
-			$('.owl-carousel').owlCarousel({
-				loop : true,
-				margin : 10,
-				autoplay : true,
-				autoplayTimeout : 3000,
-				autoplayHoverPause : true,
-				responsiveClass : true,
-				responsive : {
-					0 : {
-						items : 1,
-					},
-					600 : {
-						items : 1,
-					},
-					1000 : {
-						items : 1,
-					}
-				}
-			})
-		});
-	</script>
-
-
-
-
-	
-
-	<!-- ###### -->
-	<script src="src/dist/echarts.js"></script>
-
-
-	<!--杨智淇图表js-->
-	<script type="text/javascript">
+			
+        </script>
+        
+      <!--杨智淇图表js-->
+      <script src="src/dist/echarts.js"></script>
+      <script type="text/javascript">
 		// 路径配置
 		require.config({
 			paths : {
@@ -1113,13 +1485,12 @@ input[type="text"], input[type="email"], select {
 			myChart.setOption(option3);
 		});
 	</script>
-
-
-
-	<script src="src/theme/mythemes.js"></script>
+	
+		<script src="src/theme/mythemes.js"></script>
 	<!--引入 theme1 和 theme2 -->
 	<script src="src/dist/echarts-all.js"></script>
 	<!-- ###### -->
+	<!--radar图表js-->
 	<!--radar图表js-->
 	<script type="text/javascript">
 		// 基于准备好的dom，初始化echarts图表
@@ -1178,8 +1549,8 @@ input[type="text"], input[type="email"], select {
 			        x : 'center',
 			        y : 'bottom',
 			        data:[
-			            '年龄','性别','地区','婚姻状况','学校',
-			            '学历', '专业', '工龄', '职位', '技能','公司','项目经历'
+					'性别','年龄','学校',
+					'学历', '专业', '工龄', '职位', '技能','公司','项目经历'
 			        ]
 			    },
 			      tooltip : {
@@ -1228,18 +1599,16 @@ input[type="text"], input[type="email"], select {
 			  polar : [
 			       {
 			           indicator : [
-			               { text: '年龄', max: 100},
-			               { text: '性别', max: 100},
-			               { text: '地区', max: 100},
-			               { text: '婚姻状况', max: 100},
-			               { text: '学校', max: 100},
-			               { text: '学历', max: 100},
-			               { text: '专业', max: 100},
-			               { text: '工龄', max: 100},
-			               { text: '职位', max: 100},
-			               { text: '技能', max: 100},
-			               { text: '公司', max: 100},
-			               { text: '项目经历', max: 100},
+			                        { text: '性别', max: 100},
+			                        { text: '年龄', max: 100},
+			                        { text: '专业', max: 100},
+			                        { text: '学校', max: 100},
+			                        { text: '学历', max: 100},
+			                        { text: '工龄', max: 100},
+			                        { text: '职位', max: 100},
+			                        { text: '技能', max: 100},
+			                        { text: '公司', max: 100},
+			                        { text: '项目经历', max: 100},
 			             
 			            ]
 			        }
@@ -1247,24 +1616,13 @@ input[type="text"], input[type="email"], select {
 			    series : [
 			        {
 			            type : 'pie',
-			            center : ['10%', '7.5%'],
-			            radius : radius,
-			            x: '0%', // for funnel
-			            itemStyle : labelFromatter,
-			            data : [
-			                {name:'other', value:100-'${age_score}', itemStyle : labelBottom},
-			                {name:'年龄', value:'${age_score}',itemStyle : labelTop}
-			            ]
-			        },
-			        {
-			            type : 'pie',
 			            center : ['10%', '22.5%'],
 			            radius : radius,
 			            x:'20%', // for funnel
 			            itemStyle : labelFromatter,
 			            data : [
-			                {name:'other', value:56, itemStyle : labelBottom},
-			                {name:'性别', value:44,itemStyle : labelTop}
+			                {name:'other', value:0, itemStyle : labelBottom},
+			                {name:'性别', value:100,itemStyle : labelTop}
 			            ]
 			        },
 			        {
@@ -1274,8 +1632,8 @@ input[type="text"], input[type="email"], select {
 			            x:'40%', // for funnel
 			            itemStyle : labelFromatter,
 			            data : [
-			                {name:'other', value:65, itemStyle : labelBottom},
-			                {name:'地区', value:35,itemStyle : labelTop}
+			                {name:'other', value:0, itemStyle : labelBottom},
+			                {name:'年龄', value:100,itemStyle : labelTop}
 			            ]
 			        },
 			        {
@@ -1285,8 +1643,8 @@ input[type="text"], input[type="email"], select {
 			            x:'60%', // for funnel
 			            itemStyle : labelFromatter,
 			            data : [
-			                {name:'other', value:70, itemStyle : labelBottom},
-			                {name:'婚姻状况', value:30,itemStyle : labelTop}
+				                {name:'other', value:100-'${major_score}', itemStyle : labelBottom},
+				                {name:'专业', value:'${major_score}',itemStyle : labelTop}
 			            ]
 			        },
 			        {
@@ -1312,18 +1670,7 @@ input[type="text"], input[type="email"], select {
 			                {name:'学历', value:'${background_score}',itemStyle : labelTop}
 			            ]
 			        },
-			        {
-			            type : 'pie',
-			            center : ['90%', '7.5%'],
-			            radius : radius,
-			            y: '55%',   // for funnel
-			            x:'20%',    // for funnel
-			            itemStyle : labelFromatter,
-			            data : [
-			                {name:'other', value:100-'${major_score}', itemStyle : labelBottom},
-			                {name:'专业', value:'${major_score}',itemStyle : labelTop}
-			            ]
-			        },
+
 			               {
 			            type : 'pie',
 			            center : ['90%', '22.5%'],
@@ -1332,8 +1679,8 @@ input[type="text"], input[type="email"], select {
 			            x:'80%', // for funnel
 			            itemStyle : labelFromatter,
 			            data : [
-			                {name:'other', value:89, itemStyle : labelBottom},
-			                {name:'工龄', value:11,itemStyle : labelTop}
+			                {name:'other', value:50, itemStyle : labelBottom},
+			                {name:'工龄', value:50,itemStyle : labelTop}
 			            ]
 			        },
 			        {
@@ -1356,8 +1703,8 @@ input[type="text"], input[type="email"], select {
 			            x:'60%', // for funnel
 			            itemStyle : labelFromatter,
 			            data : [
-			                {name:'other', value:83, itemStyle : labelBottom},
-			                {name:'技能', value:17,itemStyle : labelTop}
+			                {name:'other', value:30, itemStyle : labelBottom},
+			                {name:'技能', value:70,itemStyle : labelTop}
 			            ]
 			        },
 			        {
@@ -1368,8 +1715,8 @@ input[type="text"], input[type="email"], select {
 			            x:'80%', // for funnel
 			            itemStyle : labelFromatter,
 			            data : [
-			                {name:'other', value:89, itemStyle : labelBottom},
-			                {name:'公司', value:11,itemStyle : labelTop}
+			                {name:'other', value:35, itemStyle : labelBottom},
+			                {name:'公司', value:65,itemStyle : labelTop}
 			            ]
 			        },
 			        {
@@ -1380,16 +1727,25 @@ input[type="text"], input[type="email"], select {
 			            x:'80%', // for funnel
 			            itemStyle : labelFromatter,
 			            data : [
-			                {name:'other', value:89, itemStyle : labelBottom},
-			                {name:'项目经历', value:11,itemStyle : labelTop}
+			                {name:'other', value:11, itemStyle : labelBottom},
+			                {name:'项目经历', value:89,itemStyle : labelTop}
 			            ]
 			        },
 			      {
 			            name: '分数',
 			            type: 'radar',
+			            itemStyle: {
+			                normal: {
+			                  color:'rgb(88,200,209)',
+			                  areaStyle: {
+			                        type: 'default',
+			                        color: 'rgba(88,200,209,0.7)'
+			                  },
+			                }
+			            },
 			            data : [
 			                {
-			                    value : ['${age_score}', 100, 100, 97,'${school_score}', '${background_score}','${major_score}',100,'${position_score}',100,90,89],
+			                    value : [ 100,'${age_score}','${major_score}', '${school_score}', '${background_score}',50,'${position_score}',70,65,89],
 			                    name : '分数'
 			                }
 
@@ -1839,5 +2195,6 @@ input[type="text"], input[type="email"], select {
 		// 为echarts对象加载数据 
 		myChart2.setOption(option2);
 	</script>
-</body>
+
+	</body>
 </html>
